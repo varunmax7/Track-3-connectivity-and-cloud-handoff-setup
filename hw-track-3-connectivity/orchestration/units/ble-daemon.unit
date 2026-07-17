@@ -1,0 +1,7 @@
+[Unit]
+name = ble-daemon
+description = BLE peripheral daemon
+dependencies = [encryption-daemon]
+readiness_check = ble_daemon_ready
+restart_policy = restart_on_failure
+startup_priority = 1

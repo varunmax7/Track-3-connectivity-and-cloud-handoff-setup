@@ -1,0 +1,7 @@
+[Unit]
+name = cloud-gateway
+description = FastAPI cloud ingestion gateway
+dependencies = [encryption-daemon, storage-daemon]
+readiness_check = cloud_gateway_ready
+restart_policy = restart_on_failure
+startup_priority = 2

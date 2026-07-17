@@ -1,0 +1,7 @@
+[Unit]
+name = storage-daemon
+description = Storage vault daemon
+dependencies = [encryption-daemon]
+readiness_check = storage_daemon_ready
+restart_policy = restart_on_failure
+startup_priority = 1

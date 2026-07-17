@@ -1,0 +1,7 @@
+[Unit]
+name = encryption-daemon
+description = HW-2 encryption and signing daemon (ATECC608B interface)
+dependencies = []
+readiness_check = encryption_daemon_ready
+restart_policy = halt_all_on_failure
+startup_priority = 0
